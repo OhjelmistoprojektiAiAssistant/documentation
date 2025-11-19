@@ -28,6 +28,12 @@
 - `PUT /api/auth/updateDraft` - Update existing draft
 - `DELETE /api/auth/deletedrafts` - Delete draft
 
+**Job Search:**
+- `GET /api/jobs` - Search job listings using Adzuna API integration
+
+**AI Applications:**
+- `POST /api/newApplication` - Generate AI-powered job applications using OpenAI
+
 **Features:**
 - ✨ Interactive Testing - Test APIs directly from the docs
 - 📋 Schema Validation - Clear request/response formats
