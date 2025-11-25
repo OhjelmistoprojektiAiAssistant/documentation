@@ -28,6 +28,92 @@ Show a keyword coverage score.
 
 - Reduces stress and increases interview chances.
 
+## Prerequisites
+
+Before you begin, ensure you have the following installed and configured on your system:
+
+### Required Software
+
+**Node.js & npm**
+- Node.js version 18.17 or later
+- npm (comes with Node.js) or yarn package manager
+- Check versions: `node --version` and `npm --version`
+- Download from: [nodejs.org](https://nodejs.org/)
+
+**PostgreSQL Database**
+- PostgreSQL 12 or later
+- Local installation OR cloud database (recommended for production)
+- Database client (optional): pgAdmin, DBeaver, or similar
+
+
+**Git**
+- Git version control system
+- Download from: [git-scm.com](https://git-scm.com/)
+
+### Required Accounts & API Keys
+
+**OpenAI API Account**
+- Create account at [platform.openai.com](https://platform.openai.com)
+- Generate API key from dashboard
+- Ensure you have sufficient credits/billing setup
+- Required for AI cover letter generation
+
+**Database Hosting (Choose One)**
+- **Vercel Postgres** (recommended for Vercel deployment)
+- **Supabase** (free tier available)
+- **Railway** (simple setup)
+
+### Development Tools (Recommended)
+
+**Code Editor**
+- Visual Studio Code (recommended)
+- Extensions: TypeScript, Tailwind CSS IntelliSense, Prisma
+
+**Database Management**
+- Prisma Studio (included with project)
+- Or database client of choice
+
+
+### Knowledge Prerequisites
+
+**Essential**
+- Basic command line/terminal usage
+- Environment variables setup
+- Git basics (clone, commit, push)
+
+**Helpful (Not Required)**
+- JavaScript/TypeScript fundamentals
+- React basics
+- Database concepts
+- REST API understanding
+- Next.JS intermediet skills
+
+### Before Installation Checklist
+
+- [ ] Node.js 18.17+ installed
+- [ ] PostgreSQL access (local or cloud)
+- [ ] OpenAI API key obtained
+- [ ] Git installed and configured
+- [ ] Code editor ready
+- [ ] Terminal/command prompt access
+
+### Quick Verification
+
+Run these commands to verify your setup:
+
+```bash
+# Check Node.js version
+node --version
+
+# Check npm version  
+npm --version
+
+# Check Git version
+git --version
+
+# Test PostgreSQL connection (if local)
+psql --version
+
 # 🚀 Getting Started
 ### Prerequisites
 
@@ -37,39 +123,23 @@ Show a keyword coverage score.
 
 - OpenAI API key
 
-# Installation
-### Clone the repo
-- git clone https://github.com/OhjelmistoprojektiAiAssistant/ai-career-assistant.git
-- cd ai-career-assistant
+## Getting Started
 
-### Install dependencies
-- npm install
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Set up environment variables (DATABASE_URL, OPENAI_API_KEY, etc.)
+4. Run database migrations: `npx prisma migrate deploy`
+5. Start the development server: `npm run dev`
+6. Visit `http://localhost:3000`
 
-### Setup environment variables
-- cp .env.example .env
-
-## Environment Variables (.env)
-- DATABASE_URL="file:./dev.db"   # SQLite for development
-- OPENAI_API_KEY=your_openai_key_here
-- JWT_SECRET=your_secret_key
-
-## Database Setup
-- npx prisma migrate dev
-
-## Run Development Server
-- npm run dev
-
-
-Open http://localhost:3000
- in your browser.
+## Environment Variables Required
 
 ## ❓ Getting Help
 
 - Read project docs in /docs.
 
-- Check per-sprint README files for details. //-> Filled in later
+- Check per-sprint README files for details.
 
-- Open a GitHub issue if you need support. // ->  Filled in later
 
 # 👥 Maintainers & Contributors
 
